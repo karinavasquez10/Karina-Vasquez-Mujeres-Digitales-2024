@@ -8,13 +8,13 @@
 |--------|----------------------------------------|----------|
 | 1      | Discord                                | https://discord.gg/Bw55sv4S |
 | 2      | Correo Docente Jeisson                 | especialista16@keycode.com.co |
-| 3      | Repositorio Github                     | [Enlace a recurso] |
+| 3      | Repositorio Github                     | https://github.com/AllexanderGM/KeyCode-React-Redux |
 
 ## 📝 **Conducto Regular**
 
 Para cualquier duda o consulta, sigue el siguiente conducto regular:
 
-1. **Docente** -> El docente decide si escalar el tema.
+1. **Docente**: El docente decide si escalar el tema.
 2. **Jeny o Tatiana**: Correos (Jenny Cordoba: seguimiento@keycode.com.co y Tatiana: bienestar@keycode.com.co)
 
 ## ⚠️ **Reglamento del Curso**
