@@ -1,6 +1,6 @@
 # 📚 **Repositorio del Curso React Js + Redux**
 
-¡Bienvenidos al repositorio oficial del curso [Nombre del Curso]! Aquí encontrarán todo el material necesario para seguir las clases, incluyendo ejemplos de código, actividades y recursos adicionales.
+¡Bienvenidos al repositorio oficial del curso React Js + Redux! Aquí encontrarán todo el material necesario para seguir las clases, incluyendo ejemplos de código, actividades y recursos adicionales.
 
 ## 🛠️ **Herrameintas y recursos**
 
