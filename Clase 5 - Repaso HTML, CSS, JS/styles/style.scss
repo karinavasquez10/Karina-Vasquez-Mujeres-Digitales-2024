@@ -1,0 +1,72 @@
+@import "./inicio.scss";
+@import "./lista.scss";
+
+@font-face {
+    font-family: "Inter";
+    src: url("https://fonts.google.com/specimen/Inter");
+}
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey-900);
+    font-size: 14px;
+
+    * {
+        color: white;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: var(--grey-700);
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 100%;
+
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+
+                list-style: none;
+
+                li {
+                    padding: 7px 12px;
+
+                    a {
+                        background-color: var(--green);
+                        padding: 10px 15px;
+                        color: var(--grey-800);
+                        border-radius: 10px;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen {
+}

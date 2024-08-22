@@ -1,0 +1,140 @@
+.contenedor_tarjeta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+.contenedor_tarjeta .tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: var(--grey-800);
+  border-radius: 10px;
+  padding: 20px;
+}
+.contenedor_tarjeta .tarjeta .imagen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.contenedor_tarjeta .tarjeta .imagen figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100px;
+  height: 100%;
+  max-height: 100px;
+  border-radius: 50%;
+}
+.contenedor_tarjeta .tarjeta .imagen figure img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: 0.2s;
+}
+.contenedor_tarjeta .tarjeta .imagen figure img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: blueviolet;
+}
+.contenedor_tarjeta .tarjeta .imagen figure img:hover {
+  width: 120%;
+  height: 120%;
+  transition: 0.2s;
+}
+.contenedor_tarjeta .tarjeta .imagen p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--white);
+  font-family: "Inter";
+  font-size: 18px;
+}
+.contenedor_tarjeta .tarjeta .imagen p span {
+  color: var(--green);
+}
+
+.contenedor_lista {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+.contenedor_lista .contacto {
+  background-color: var(--grey-700);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("https://fonts.google.com/specimen/Inter");
+}
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--grey-900);
+  font-size: 14px;
+}
+body * {
+  color: white;
+}
+body h1 {
+  color: white;
+}
+body header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--grey-700);
+}
+body header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+body header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+}
+body header nav ul li {
+  padding: 7px 12px;
+}
+body header nav ul li a {
+  background-color: var(--green);
+  padding: 10px 15px;
+  color: var(--grey-800);
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
