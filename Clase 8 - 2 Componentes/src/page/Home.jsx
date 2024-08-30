@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import Imagen from "../components/Imagen";
+
 import imgen1 from "../assets/imagen1.jpg";
 import imgen2 from "../assets/imagen2.jpg";
 import imgen3 from "../assets/imagen3.jpg";
@@ -23,11 +25,14 @@ function Home() {
         setImagenState(ListaImagenes[aleatorio]); // Asignamos al estado el valor de la imagen, en el indice del numero aleatorio
     };
 
+    let texto = "soy un texto";
+
     return (
         <main>
-            <figcaption>
+            <Imagen texto={texto} numero={1}>
                 <img src={imagenState} />
-            </figcaption>
+                <h2>lorem sadaw</h2>
+            </Imagen>
 
             <button onClick={handlerButton}>Cambiar imagen</button>
         </main>
