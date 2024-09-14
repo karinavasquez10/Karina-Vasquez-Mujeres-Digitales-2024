@@ -1,0 +1,26 @@
+#root {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 20px;
+    padding: 60px;
+
+    h1 {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        span {
+            text-align: center;
+            font-size: 3rem;
+        }
+    }
+}
