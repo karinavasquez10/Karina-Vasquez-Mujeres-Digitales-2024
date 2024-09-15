@@ -1,8 +1,8 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
 const SeeTask = ({ listTask }) => {
     const elements = listTask.map((item, index) => (
-        <li key={index}>
+        <li id='description' key={index}>
             <h2>{item.title || "Sin título"}</h2>
             <p>{item.description || "Sin descripción"}</p>
         </li>
@@ -10,7 +10,7 @@ const SeeTask = ({ listTask }) => {
 
     return (
         <div>
-            <h1>Lista de tareas</h1>
+            <h1>Task list</h1>
 
             <ul>{elements}</ul>
         </div>

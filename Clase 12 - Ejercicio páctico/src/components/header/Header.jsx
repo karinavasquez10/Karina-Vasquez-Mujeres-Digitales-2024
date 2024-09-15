@@ -1,22 +1,27 @@
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
+import ButtonAtom from './ButtonAtom';
 
-import BottonAtom from "./components/BottonAtom";
-
-const Header = ({ setShowComponent }) => {
-    return (
-        <header>
-            <nav>
-                <ul>
-                    <BottonAtom text="Agregar Tarea" value={true} setShowComponent={setShowComponent} />
-                    <BottonAtom text="Ver Tareas" value={false} setShowComponent={setShowComponent} />
-                </ul>
-            </nav>
-        </header>
-    );
-};
+const Header = ({ activeView, setActiveView }) => (
+  <header className="mb-6">
+    <nav>
+      <ul className="flex">
+        <ButtonAtom
+          text="Agregar Tarea"
+          isActive={activeView === 'add'}
+          onClick={() => setActiveView('add')}
+        />
+        <ButtonAtom
+          text="Ver Tareas"
+          isActive={activeView === 'view'}
+          onClick={() => setActiveView('view')}
+        />
+      </ul>
+    </nav>
+  </header>
+);
 
 Header.propTypes = {
-    setShowComponent: PropTypes.func.isRequired,
+  activeView: PropTypes.string.isRequired,
+  setActiveView: PropTypes.func.isRequired,
 };
-
-export default Header;

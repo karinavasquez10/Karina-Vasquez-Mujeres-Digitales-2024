@@ -18,6 +18,7 @@ BottonAtom.propTypes = {
     text: PropTypes.string.isRequired,
     value: PropTypes.bool.isRequired,
     setShowComponent: PropTypes.func.isRequired,
+    
 };
 
 export default BottonAtom;
